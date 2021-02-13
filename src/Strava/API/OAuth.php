@@ -14,14 +14,14 @@ class OAuth extends AbstractProvider
     use BearerAuthorizationTrait;
 
     /**
-     * Under Armour URL.
+     * Strava URL.
      *
      * @const string
      */
     const BASE_STRAVA_URL = 'https://www.strava.com';
 
     /**
-     * Under Armour API URL.
+     * Strava API URL.
      *
      * @const string
      */
