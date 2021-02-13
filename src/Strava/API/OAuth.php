@@ -53,7 +53,7 @@ class OAuth extends AbstractProvider
      */
     public function getBaseAccessTokenUrl(array $params)
     {
-        return static::BASE_STRAVA_URL.'/oauth/token/';
+        return static::BASE_STRAVA_API_URL.'/oauth/token/';
     }
 
     /**
