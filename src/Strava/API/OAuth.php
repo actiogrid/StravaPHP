@@ -33,7 +33,7 @@ class OAuth extends AbstractProvider
      *
      * @const string
      */
-    const BASE_STRAVA_API_URL = 'https://www.strava.com/api/v3/';
+    const BASE_STRAVA_API_URL = 'https://www.strava.com/api/v3';
 
     /**
      * Returns the base URL for authorizing a client.
@@ -42,7 +42,7 @@ class OAuth extends AbstractProvider
      */
     public function getBaseAuthorizationUrl()
     {
-        return static::BASE_STRAVA_URL.'/oauth/authorize/';
+        return static::BASE_STRAVA_URL.'/oauth/authorize';
     }
 
     /**
@@ -53,7 +53,7 @@ class OAuth extends AbstractProvider
      */
     public function getBaseAccessTokenUrl(array $params)
     {
-        return static::BASE_STRAVA_API_URL.'/oauth/token/';
+        return static::BASE_STRAVA_API_URL.'/oauth/token';
     }
 
     /**
