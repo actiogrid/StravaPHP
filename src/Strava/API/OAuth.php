@@ -1,6 +1,14 @@
 <?php
 namespace Strava\API;
 
+use League\OAuth2\Client\Provider\Exception\IdentityProviderException;
+use League\OAuth2\Client\Provider\ResourceOwnerInterface;
+use League\OAuth2\Client\Token\AccessToken as AccessToken;
+use League\OAuth2\Client\Tool\BearerAuthorizationTrait as BearerAuthorizationTrait;
+use League\OAuth2\Client\Provider\AbstractProvider as AbstractProvider;
+use Psr\Http\Message\ResponseInterface;
+use UnexpectedValueException;
+
 /**
  * Strava OAuth
  * The Strava implementation of the OAuth client
