@@ -28,7 +28,7 @@
   "minimum-stability": "stable",
   "autoload": {
     "psr-0": {
-      "UnderArmour": "src/"
+      "Strava": "src/"
     }
   }
 }
